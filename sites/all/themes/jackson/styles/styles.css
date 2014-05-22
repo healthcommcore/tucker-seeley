@@ -52,7 +52,7 @@
  */
 
 body {
-  background-color: #EEF0ED;
+  background: #FFF3D7;
   color: #4F4E4E;
   font-family: 'OpenSansRegular', Arial, FreeSans, sans-serif;
 	font-size:1.0em !important;
@@ -60,13 +60,17 @@ body {
 }
 
 #main{
+	background:#fff;
+	border-right:#000 1px solid;
+	border-left:#000 1px solid;
 }
 p{margin-bottom:12px;}
 
 a{word-wrap:break-word;}
 
-#page{background:#fff;}
+#page{}
 h1 {
+	line-height:1.2em;
 	letter-spacing:-.02em;
   font-size: 2.5em;
   font-weight: normal;
@@ -178,13 +182,13 @@ a:hover {
 }
 header {
 	display:block;
-  background: url(../images/header-bg.gif) repeat-x;
-  height: 145px;
+	border-bottom:#000 1px solid;
+  /*height: 145px;*/
   width: 100%;
 }
 .header {
-  height: 130px;
-  padding-top: 15px;
+	background:url('../images/logo_line.gif') 0 70px no-repeat;
+  height: 100px;
 }
 .header a,
 .header a:hover,
@@ -195,9 +199,13 @@ header {
   padding-top: 15px;
 }
 .logo {
-	margin-top:15px;
+	margin:15px 0 0 13px;
   float: left;
 }
+
+.inst-logos{float:right; margin-top:45px;}
+.inst-logos a{float:left; margin:0 10px;}
+
 .block-search {
   clear: right;
   float: right;
@@ -221,6 +229,13 @@ header {
   text-decoration: none;
 }
 
+/* Home
+-------------------------------------------------------------- */
+
+#rotators img:last-child{width:239px;}
+.rotator{float:left;}
+.rotator p{margin: 0;}
+.border-right{border-right:#000 1px solid;}
 /* Search
 -------------------------------------------------------------- */
 #search {
@@ -245,24 +260,22 @@ header {
 /* Primary Navigation
 -------------------------------------------------------------- */
 .navigation {
-  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
-  height: 45px;
-  margin-top: -45px;
+  /*background: transparent url(../images/sprite.gif) repeat-x scroll left
+	 * top;*/
+	background:#022249;
+  height: 40px;
 }
 nav{z-index:100;}
 nav li{
-  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
   float: left;
-  height: 45px;
-  line-height: 45px;
+  height: 40px;
+  line-height: 40px;
 }
 nav li.active,
 nav li:hover {
-	color:#111;
-  background-position: left -45px;
+  background:#E0633C;
 }
 nav a {
-  color: #E7C68C;
   display: block;
   font-size: 15px;
   padding: 0 30px;
@@ -271,9 +284,12 @@ nav a {
   vertical-align: middle;
 }
 nav a:hover{
-  color: #111;
   text-decoration: none;
 }
+
+nav li.active{font-weight:bold;}
+
+nav a, nav a:hover, nav li a.active{color:#fff;}
 
 /* Superfish
 -------------------------------------------------------------- */
@@ -509,6 +525,9 @@ div.messages {
   margin: 0;
   padding: 0;
 }
+
+footer{border-top:#000 1px solid;}
+
 footer ul {
   list-style: none;
   text-align: center;
@@ -527,7 +546,6 @@ footer a:hover {
   text-decoration: underline;
 }
 .footer {
-	border-top:#57674D 5px solid;
   margin: 0 auto;
   width: 960px;
 }

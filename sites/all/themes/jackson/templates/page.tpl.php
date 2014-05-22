@@ -50,6 +50,7 @@
         </nav> <!-- /#navigation -->
       <?php endif; ?>
   
+			<!--
       <div id="banner-wrap" class="slider-content <?php if(!$page['banner']) print 'empty' ?>">
         <?php if ($page['banner']): ?>
              <div id="banner" class="clearfix">
@@ -59,11 +60,37 @@
              </div>
         <?php endif; ?>
       </div>
+			-->
   
   
       <div id="main-wrapper">
       <?php print $messages; ?>
     
+				<?php if ($page['home_rotator_one'] || $page['home_rotator_two'] || 
+								  $page['home_rotator_three'] || $page['home_rotator_four']): ?>
+          <div id="rotators" class="container clearfix">
+						 <?php if ($page['home_rotator_one']): ?>
+								<div id="rotator1" class="rotator border-right">
+                  <?php print render($page['home_rotator_one']); ?>
+                </div>
+              <?php endif; ?>
+						 <?php if ($page['home_rotator_two']): ?>
+								<div id="rotator2" class="rotator border-right">
+                  <?php print render($page['home_rotator_two']); ?>
+                </div>
+              <?php endif; ?>
+						 <?php if ($page['home_rotator_three']): ?>
+								<div id="rotator3" class="rotator border-right">
+                  <?php print render($page['home_rotator_three']); ?>
+                </div>
+              <?php endif; ?>
+						 <?php if ($page['home_rotator_four']): ?>
+								<div id="rotator4" class="rotator border-right">
+                  <?php print render($page['home_rotator_four']); ?>
+                </div>
+              <?php endif; ?>
+          </div>
+        <?php endif; ?>
         <?php if ($page['preface_one'] || $page['preface_two'] || $page['preface_three']): ?>
           <div id="preface" class="clearfix">
             <div class="container preface clearfix">
