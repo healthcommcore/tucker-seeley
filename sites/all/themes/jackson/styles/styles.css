@@ -72,9 +72,9 @@ a{word-wrap:break-word;}
 h1 {
 	line-height:1.2em;
 	letter-spacing:-.02em;
-  font-size: 2.5em;
+  font-size: 2.0em;
   font-weight: normal;
-  margin: .5em 0 1.0em;
+  margin: .5em 0 0.7em;
   color: #3d5454;
 }
 h2 {
@@ -136,13 +136,12 @@ strong{font-family:'OpenSansBold';}
 em{font-family:'OpenSansItalic';}
 sup{font-size:0.7em; top:-5px; position:relative;}
 
-#main ul {
-
+#main ul.menu {
+	text-align:right;
 }
 #main ul li {
-  margin-left: 20px;
-  list-style: disc;
 }
+
 ul.links.inline {
   display:block;
   margin-bottom:20px;
@@ -151,7 +150,11 @@ ul.links.inline {
 .sidebar ul li {
   margin-left: 0;
   list-style: none;
+	margin-bottom:10px;
 }
+
+.sidebar li a{font-size:1.1em;}
+
 .form-submit,
 .form-button {
   background-color: #102624;

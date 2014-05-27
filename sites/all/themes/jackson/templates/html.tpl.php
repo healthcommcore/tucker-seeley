@@ -16,14 +16,6 @@
 <![endif]-->
 
 <!-- Google Analytics -->
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)j
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
- ga('create', 'UA-42499556-1', 'harvard.edu');
-  ga('send', 'pageview');
-</script>
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -33,5 +25,24 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+<!-- Popup window for external links -->
+	<script>
+		(function($){
+			var extLinks = $('.popup');
+			var width = $(window).width() / 1.5;
+			var height = $(window).height();
+			var xPos = window.screenX + (window.outerWidth - width) / 2;
+			var yPos = window.screenY + (window.outerHeight - height) / 2;;
+			var options = "resizable=yes,menubar=yes,toolbar=yes,status=yes,location=yes," + 
+				"height=" + height + ",width=" + width + 
+				",top=" + yPos + ",left=" + xPos;
+			for(var i = 0; i < extLinks.length; i++){
+				extLinks[i].onclick = function(){
+					window.open(this.href, this.value, options);
+					return false;
+				}
+			}
+		})(jQuery);
+	</script>
 </body>
 </html>

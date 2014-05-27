@@ -5,7 +5,7 @@
 
 #main{overflow:hidden;}
 
-.page-content{padding:2em 0 6em 0;}
+.page-content{padding:3em 0 6em 0;}
 .no-sidebars .main,
 .no-sidebars .page-content {
   width: 960px;
@@ -36,11 +36,13 @@
   width: 240px;
 }
 .one-sidebar .first-sidebar {
-	background:#E7EED8;
+	background:#fff;
   float: left;
   width: 230px;
 	padding-bottom:30000px;
 	margin-bottom:-30000px;
+	padding-top:42px;
+	border-right:#ddd 1px solid;
 }
 .one-sidebar .second-sidebar {
   float: right;
