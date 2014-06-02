@@ -133,7 +133,7 @@
               </div><!-- /.section -->
             </div><!-- /#sidebar-first -->
           <?php endif; ?>
-					<?php if (!drupal_is_front_page()) : ?>
+					<?php //if (!drupal_is_front_page()) : ?>
     
             <article class="page-content content-column section">
               <div class="gutter">
@@ -154,7 +154,7 @@
                 <?php print $feed_icons; ?>
               </div>
             </article><!-- /.section .content .gutter -->
-					<?php endif; ?>
+					<?php //endif; ?>
           </div> <!-- /#content -->
     
         </div><!-- /#main -->
