@@ -133,9 +133,9 @@
               </div><!-- /.section -->
             </div><!-- /#sidebar-first -->
           <?php endif; ?>
-					<?php //if (!drupal_is_front_page()) : ?>
+					<?php $contentWidth = drupal_is_front_page() ? 'home-content' : 'page-content' ?>
     
-            <article class="page-content content-column section">
+						<article class="<?php echo $contentWidth; ?>  content-column section">
               <div class="gutter">
                 <?php if ($breadcrumb): ?>
                   <!--<div id="breadcrumb" class="container"><?php //print $breadcrumb; ?></div>-->

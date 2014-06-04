@@ -92,6 +92,10 @@ p{margin-bottom:12px;}
 
 a{word-wrap:break-word;}
 
+i, em{font-family:'OpenSansItalic'; font-style:normal;}
+
+strong{font-family:'OpenSansBold'; font-weight:normal;}
+
 #page{}
 h1 {
 	font-family:'droid_serifregular';
@@ -157,8 +161,6 @@ ol{
   margin-left: 25px;
 }
 
-strong{font-family:'OpenSansBold';}
-em{font-family:'OpenSansItalic';}
 sup{font-size:0.7em; top:-5px; position:relative;}
 
 #main ul.menu {
@@ -265,10 +267,11 @@ header {
 #rotators{border-bottom:#000 1px solid;}
 .rotator{float:left; width:239px; background:#fff; height:388px;}
 .rotator p{margin: 0;}
-.rotator blockquote{color:#E0643D; font-family:'droid_serifitalic'; font-size:1.12em; line-height:1.8em; padding:40px 30px;}
-.rotator blockquote:before{background:url('../images/leftquote.gif') 0 0 no-repeat; display:block; width:26px; height:19px; float:left; margin-left:-10px; padding-right:10px;}
-.rotator blockquote:after{background:url('../images/rightquote.gif') 0 0 no-repeat; display:block; width:26px; height:19px; float:right; margin-right:30px;}
-h1.homepage{}
+.rotator blockquote{padding:40px 30px;}
+blockquote{color:#E0643D; font-family:'droid_serifitalic'; font-size:1.12em; line-height:1.8em; padding:0 12px;}
+blockquote:before{background:url('../images/leftquote.gif') 0 0 no-repeat; display:block; width:26px; height:19px; float:left; margin-left:-10px; padding-right:10px;}
+blockquote:after{background:url('../images/rightquote.gif') 0 0 no-repeat; display:block; width:26px; height:19px; float:right; margin-right:30px;}
+h1.homepage{margin-top:0;}
 .border-right{border-right:#000 1px solid;}
 /* Search
 -------------------------------------------------------------- */
@@ -519,7 +522,6 @@ div.messages {
   background-color: #3d5454;
   padding-left: 5px;
 }
-	*/
 #preface h2,
 #preface h3 ,
 .sidebar h2 {
@@ -527,6 +529,7 @@ div.messages {
   color: #ffffff;
   padding: 3px 15px;
 }
+	*/
 .sidebar .content {
   padding: 15px;
 }
@@ -648,6 +651,9 @@ table{border-collapse:collapse; margin-bottom:20px;}
 td{padding-bottom:20px; vertical-align:top; !important}
 td img{margin-right:25px;}
 .field-name-field-tags{display:none;}
+article ul, article ol{margin:-10px 0 10px 40px;}
+article li{margin-bottom:5px;}
+.float-img{float:left; margin:0 15px 10px 0; border:#ddd 1px solid;}
 
 .topmenu{float:right; margin:10px 0 0 0;}
 .topmenu h2{display:none;}
@@ -660,8 +666,11 @@ td img{margin-right:25px;}
 .preface-1 .content, .preface-2 .content, .preface-3 .content{padding:5px 10px 10px; font-size:1.3em; font-family:'OpenSansLight'; line-height:1.53em;}
 .preface-two{margin:0 66px;}
 .mouse{float:right;}
-.news{width:200px; background:none; margin-top:22px; font-size:0.85em; line-height:1.55em; color:#2B4847;}
-.news h2{color:#fff;margin:8px 0;}
+.homepage-news{padding:0 20px;}
+.homepage-news .content{padding:0;}
+.homepage-news .content h2{font-family:'OpenSansRegular'; text-transform:none; font-size:1.15em; line-height:1.3em; margin-bottom:5px;}
+.homepage-news .content h2 a{color:#CF710C;}
+.homepage-news{}
 #banner-wrap .news .content{margin-top:0;}
 
 .subnav{background:#fff; border-bottom:#A6B292 1px solid; border-top:#A6B292 1px solid;}

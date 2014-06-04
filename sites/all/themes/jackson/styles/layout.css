@@ -5,7 +5,7 @@
 
 #main{overflow:hidden;}
 
-.page-content{padding:3em 0 6em 0;}
+.page-content, .home-content{padding:3em 0 6em 0;}
 .no-sidebars .main,
 .no-sidebars .page-content {
   width: 960px;
@@ -14,8 +14,10 @@
   float: left;
   width: 600px;
 }
+
 .sidebar-second .main,
-.sidebar-second .page-content {
+.sidebar-second .page-content,
+.sidebar-first .home-content{
   float: left;
   width: 670px;
 }
@@ -39,7 +41,7 @@
 	background:#fff;
   float: left;
   width: 230px;
-	padding-bottom:30000px;
+	padding-bottom:30020px;
 	margin-bottom:-30000px;
 	padding-top:42px;
 	border-right:#ddd 1px solid;
@@ -53,7 +55,7 @@
 /**
  * column gutters
  */
-.sidebar-first .page-content .gutter {
+.sidebar-first .page-content .gutter, .sidebar-first .home-content .gutter {
   padding-left: 52px;
 }
 .sidebar-second .page-content .gutter {
