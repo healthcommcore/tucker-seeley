@@ -36,6 +36,7 @@
 
       </div><!-- /.section .header -->
     </header> <!-- /#header -->
+		<div class="container side-borders">
   
       <?php if($main_menu || $page['superfish_menu'] ): ?>
         <nav>
@@ -70,22 +71,22 @@
 								  $page['home_rotator_three'] || $page['home_rotator_four']): ?>
           <div id="rotators" class="container clearfix">
 						 <?php if ($page['home_rotator_one']): ?>
-								<div id="rotator1" class="rotator border-right">
+								<div id="rotator1" class="rotator">
                   <?php print render($page['home_rotator_one']); ?>
                 </div>
               <?php endif; ?>
 						 <?php if ($page['home_rotator_two']): ?>
-								<div id="rotator2" class="rotator border-right">
+								<div id="rotator2" class="rotator">
                   <?php print render($page['home_rotator_two']); ?>
                 </div>
               <?php endif; ?>
 						 <?php if ($page['home_rotator_three']): ?>
-								<div id="rotator3" class="rotator border-right">
+								<div id="rotator3" class="rotator">
                   <?php print render($page['home_rotator_three']); ?>
                 </div>
               <?php endif; ?>
 						 <?php if ($page['home_rotator_four']): ?>
-								<div id="rotator4" class="rotator border-right">
+								<div id="rotator4" class="rotator">
                   <?php print render($page['home_rotator_four']); ?>
                 </div>
               <?php endif; ?>
@@ -169,7 +170,7 @@
           </div> <!-- /#sidebar-second -->
         <?php endif; ?>
     
-      </div> <!-- /#main-wrapper -->
+		</div> <!-- /#main-wrapper -->
   
 </div><!-- /#content-main -->
   
@@ -215,6 +216,7 @@
         <?php print render($page['footer']); ?>
         <!--<div id="levelten"><?php //print l('Drupal Theme', 'http://www.leveltendesign.com/'); ?> by LevelTen Interactive</div>-->
       </div><!-- /.section -->
+		</div><!-- /container, side-borders -->
     </footer> <!-- /#footer -->
     
   </div> <!-- /#page-wrapper -->

@@ -1,0 +1,8 @@
+name = CKEditor Settings Override
+description = Disable the content filtering that CKEditor forces
+package = Custom
+core = 7.x
+version = "7.x"
+core = "7.x"
+dependencies[] = wysiwyg
+files[] = ckeditor_settings.module

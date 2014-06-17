@@ -83,10 +83,14 @@ body {
 	line-height:1.55em;
 }
 
-#main{
-	background:#fff;
+.side-borders{
 	border-right:#000 1px solid;
 	border-left:#000 1px solid;
+}
+
+
+#main{
+	background:#fff;
 }
 p{margin-bottom:12px;}
 
@@ -94,7 +98,7 @@ a{word-wrap:break-word;}
 
 i, em{font-family:'OpenSansItalic'; font-style:normal;}
 
-strong{font-family:'OpenSansBold'; font-weight:normal;}
+strong{font-family:'OpenSansBold'; font-weight:normal;color:#022249;}
 
 #page{}
 h1 {
@@ -265,13 +269,14 @@ header {
 -------------------------------------------------------------- */
 
 #rotators{border-bottom:#000 1px solid;}
-.rotator{float:left; width:239px; background:#fff; height:388px;}
+.rotator{float:left; background:#fff; height:388px;}
+.rotator:last-child{width:239px;}
 .rotator p{margin: 0;}
 .rotator blockquote{padding:40px 30px;}
-blockquote{color:#E0643D; font-family:'droid_serifitalic'; font-size:1.12em; line-height:1.8em; padding:0 12px;}
+blockquote{color:#E0643D; font-family:'droid_serifitalic'; font-size:1.12em; line-height:1.8em; padding:0 12px; background:#fff;}
 blockquote:before{background:url('../images/leftquote.gif') 0 0 no-repeat; display:block; width:26px; height:19px; float:left; margin-left:-10px; padding-right:10px;}
 blockquote:after{background:url('../images/rightquote.gif') 0 0 no-repeat; display:block; width:26px; height:19px; float:right; margin-right:30px;}
-h1.homepage{margin-top:0;}
+h1.homepage{margin-top:0; font-size:2.1em; line-height:1.3em;}
 .border-right{border-right:#000 1px solid;}
 /* Search
 -------------------------------------------------------------- */
@@ -654,6 +659,8 @@ td img{margin-right:25px;}
 article ul, article ol{margin:-10px 0 10px 40px;}
 article li{margin-bottom:5px;}
 .float-img{float:left; margin:0 15px 10px 0; border:#ddd 1px solid;}
+.research-questions{font-family:'droid_serifitalic'; font-size:110%; margin:15px 0 20px 40px; color:#599AC2;}
+.research-questions li{margin-bottom:10px;line-height:1.5em;}
 
 .topmenu{float:right; margin:10px 0 0 0;}
 .topmenu h2{display:none;}
