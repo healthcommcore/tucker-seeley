@@ -1,4 +1,4 @@
-body, em, strong{font-family:Arial, Helvitica, sans-serif; color:#000;}
+body, em, strong, .research-questions{font-family:Arial, Helvitica, sans-serif; color:#000; background:#fff;}
 strong{font-weight:bold;}
 em{font-style:italic;}
 #home_copy, .home-sidebar .news, .sidebar-first .page-content{width:650px; position:relative; float:none;}
@@ -20,3 +20,5 @@ h2{font-size:22pt; text-transform:none;}
 #home_copy h1{font-size:32pt;}
 .preface-1, .preface-2, .preface-3{width:22%;}
 .preface-two{margin:0 20px;}
+footer, .side-borders{border:none;}
+.research-questions{font-style:italic;}

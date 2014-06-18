@@ -28,6 +28,7 @@
 <!-- Popup window for external links -->
 	<script>
 		(function($){
+// External links popup
 			var extLinks = $('.popup');
 			var width = $(window).width() / 1.5;
 			var height = $(window).height();
@@ -43,6 +44,7 @@
 				}
 			}
 
+// Image rotation
 			$(document).ready(function(){	
 				var rotators = $('.rotate').hide(), i = 0;
 				/*
