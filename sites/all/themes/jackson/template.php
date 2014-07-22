@@ -14,13 +14,13 @@ function jackson_preprocess_page (&$vars) {
 			'#tag' => 'meta',
 			'#attributes' => array(
 				'name' => 'description',
-				'content' => 'Dana-Farber Cancer Institute and Harvard Medical Schools Zhang Lab studies the molecular pathogenesis of diffused large B cell lymphoma and EBV-associated B cell lymphoma to identify the surveillance mechanism of the immune system on tumors and develop strategies to harness immune cells for tumor therapy.'),
+				'content' => 'The Tucker-Seeley Research Lab is committed to researching socioeconomic disparities in health with a specific focus on outcomes across the cancer continuum.'),
 			);
 		$home_meta_keys = array(
 			'#tag' => 'meta',
 			'#attributes' => array(
 				'name' => 'keywords',
-				'content' => 'zhang lab, zhang laboratory, baochun zhang, dfci zhang lab, baochun zhang, harvard research lab, harvard molecular pathogenesis, dfci tumor therapy research, dfci immune system and tumor cells, harvard tumor and immune cell research'),
+				'content' => ''),
 			);
 		drupal_add_html_head($home_meta_descr, 'meta_description');
 		drupal_add_html_head($home_meta_keys, 'meta_keywords');
