@@ -314,6 +314,7 @@ nav li{
   line-height: 40px;
 }
 nav li.active,
+nav li.active-trail,
 nav li:hover {
   background:#E0633C;
 }
@@ -329,9 +330,9 @@ nav a:hover{
   text-decoration: none;
 }
 
-nav li.active{font-weight:bold;}
+nav li.active, nav li.active-trail{font-weight:bold;}
 
-nav a, nav a:hover, nav li a.active{color:#fff;}
+nav a, nav a:hover, nav li a.active, nav li a.active-trail{color:#fff;}
 
 /* Superfish
 -------------------------------------------------------------- */
@@ -667,7 +668,7 @@ article li{margin-bottom:5px;}
 .topmenu ul li{list-style:none; list-style-image:none; float:left; border-right:#CF710C 1px solid; padding:0 15px; line-height:1.1em; margin:0;}
 .topmenu ul li:last-child{border:none;}
 .topmenu li a{color:#CF710C;}
-.topmenu li a.active{color:#000;}
+.topmenu li a.active, .topmenu li a.active-trail{color:#000;}
 
 .preface-1, .preface-2, .preface-3{width:276px; background:#EAEDE9; height:240px;}
 .preface-1 .content, .preface-2 .content, .preface-3 .content{padding:5px 10px 10px; font-size:1.3em; font-family:'OpenSansLight'; line-height:1.53em;}
