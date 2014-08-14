@@ -54,15 +54,11 @@
 			}
 
 // Image rotation
+			/*
 			$(document).ready(function(){	
-				var rotators = $('.rotate').hide(), i = 0;
-				/*
-				(function cycle(){
-					rotators.eq(i).fadeIn(500).delay(5000).fadeOut(500, cycle);
-					i = ++i % rotators.length;
-				})();
-				*/
+
 			});
+			*/
 		})(jQuery);
 	</script>
 </body>
