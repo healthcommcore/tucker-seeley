@@ -698,5 +698,13 @@ div.footer_links .legal,div.footer_links .legal a, div.footer_links nav a {color
 div.footer_links .legal{clear:right; font-size:.8em; line-height:1.6em;}
 div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
 .footer_links:after{clear:both;}
+.footer-fb {margin-top: 10px;}
+.footer-fb,
+.footer-fb *{
+  float:left;
+}
+.fb-txt {width: 90px; line-height: 1.2em;}
+.footer-fb img {margin-right: 12px;}
+
 
 
