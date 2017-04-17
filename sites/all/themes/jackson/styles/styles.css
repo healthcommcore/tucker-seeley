@@ -168,7 +168,7 @@ ol{
 sup{font-size:0.7em; top:-5px; position:relative;}
 
 #main ul.menu {
-	text-align:right;
+	/* text-align:right; */
 }
 #main ul li {
 }
@@ -184,7 +184,7 @@ ul.links.inline {
 	margin-bottom:10px;
 }
 
-.sidebar li a{font-size:1.1em;}
+.sidebar li a{font-size:1.2em;}
 
 .form-submit,
 .form-button {
@@ -689,6 +689,27 @@ hr {
 .subnav h2{display:none;}
 .subnav{color:#3D5454;}
 #main .subnav li{list-style:none; list-style-image:none;}
+
+.block-menu-block {
+  padding-left: 25px;
+}
+
+.block-menu-block .menu .menu {
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.block-menu-block .menu .menu .menu{
+  border-left: #E78364 1px solid;
+  padding-left: 8px;
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+
+.block-menu-block .menu .menu .menu li.leaf {
+  padding: 0;
+  margin-bottom: 18px;
+}
 
 /** footer **/
 .footer{padding-top:10px}
