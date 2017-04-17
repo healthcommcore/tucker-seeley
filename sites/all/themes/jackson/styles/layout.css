@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  width: 960px;
+  width: 1200px;
 }
 
 #main{overflow:hidden;}
@@ -12,7 +12,7 @@
 }
 .sidebar-first .page-content {
   float: left;
-  width: 600px;
+  width: 760px;
 }
 
 .sidebar-second .main,
@@ -40,7 +40,7 @@
 .one-sidebar .first-sidebar {
 	background:#fff;
   float: left;
-  width: 230px;
+  width: 300px;
 	padding-bottom:30020px;
 	margin-bottom:-30000px;
 	padding-top:42px;
@@ -56,7 +56,7 @@
  * column gutters
  */
 .sidebar-first .page-content .gutter, .sidebar-first .home-content .gutter {
-  padding-left: 52px;
+  padding-left: 35px;
 }
 .sidebar-second .page-content .gutter {
   padding-right: 11px;

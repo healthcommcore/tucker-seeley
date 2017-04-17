@@ -36,21 +36,23 @@
 
       </div><!-- /.section .header -->
     </header> <!-- /#header -->
-		<div class="container side-borders">
   
       <?php if($main_menu || $page['superfish_menu'] ): ?>
-        <nav>
-          <div class="container navigation section">
-            <?php if($page['superfish_menu']) {
-              print render($page['superfish_menu']);
-            } else {
-              print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix'))));        
-            }
-            ?>
-          </div><!-- /.section .navigation -->
+        <nav class="navigation">
+          <div class="container">
+            <div class="container section">
+              <?php if($page['superfish_menu']) {
+                print render($page['superfish_menu']);
+              } else {
+                print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'clearfix'))));        
+              }
+              ?>
+            </div><!-- /.section .navigation -->
+          </div><!-- /.container -->
         </nav> <!-- /#navigation -->
       <?php endif; ?>
   
+		<div class="container side-borders">
 			<!--
       <div id="banner-wrap" class="slider-content <?php if(!$page['banner']) print 'empty' ?>">
         <?php if ($page['banner']): ?>

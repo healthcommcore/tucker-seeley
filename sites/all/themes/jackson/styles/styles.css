@@ -77,7 +77,7 @@ q
  */
 
 body {
-  background: #FFF3D7;
+  background: #FFF9DD;
   color: #4F4E4E;
   font-family: 'OpenSansRegular', Arial, FreeSans, sans-serif;
 	font-size:1.0em !important;
@@ -200,7 +200,7 @@ ul.links.inline {
   width:100%;
 }
 a {
-  color: #CF710C;
+  color: #E78364;
   text-decoration: none;
 }
 a:hover {
@@ -219,6 +219,7 @@ header {
 	border-bottom:#000 1px solid;
   /*height: 145px;*/
   width: 100%;
+  background: #FFEBAA;
 }
 .header {
 	background:url('../images/logo_line.gif') 0 70px no-repeat;
@@ -662,7 +663,10 @@ article li{margin-bottom:5px;}
 .float-img{float:left; margin:0 15px 10px 0; border:#ddd 1px solid;}
 .research-questions{font-family:'droid_serifitalic'; font-size:110%; margin:15px 0 20px 40px; color:#599AC2;}
 .research-questions li{margin-bottom:10px;line-height:1.5em;}
-
+hr {
+  border-color: #022249;
+  margin: 50px 0;
+}
 .topmenu{float:right; margin:10px 0 0 0;}
 .topmenu h2{display:none;}
 .topmenu ul li{list-style:none; list-style-image:none; float:left; border-right:#CF710C 1px solid; padding:0 15px; line-height:1.1em; margin:0;}
@@ -705,6 +709,85 @@ div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
 }
 .fb-txt {width: 90px; line-height: 1.2em;}
 .footer-fb img {margin-right: 12px;}
+.float-left {
+  float:left;
+}
+.float-right {
+  float: right;
+}
 
+/* FWB additions */
 
+.domain-box {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.domain-box-narrow {
+  width: 310px;
+}
+
+.domain-box-wide {
+  width: 420px;
+}
+
+.domain-box h2 {
+  font-size: 2.0em;
+  margin-bottom: 17px;
+  margin-left: 37px;
+  font-family: 'OpenSansRegular', Arial, FreeSans, sans-serif;
+}
+
+.domain-box h2 a {
+  text-decoration: underline;
+}
+
+.domain-box-narrow.material {
+  margin-top: 100px;
+}  
+
+.concepts-list {
+  font-size: 1.2em;
+  line-height: 1.3em;
+  padding: 20px 27px;
+}
+
+.concepts-list ul {
+  margin: 0;
+}
+
+.concepts-list li {
+  margin-bottom: 20px;
+  color: #315281;
+}
+
+.concepts-list li:last-child {
+  margin-bottom: 5px;
+}
+
+.concepts-border {
+  border-width: 15px;
+  border-style: solid;
+}
+
+.material .concepts-border {
+  border-color: #93A260;
+}
+
+.psychosocial .concepts-border {
+  border-color: #DFBF44;
+}
+
+.behavioral .concepts-border {
+  border-color: #89B4C1;
+}
+
+.domain-name-box p {
+  color: #fff;
+  background: #305282;
+  width: 220px;
+  padding: 35px 0 40px 0;
+  text-align: center;
+  font-size: 1.8em;
+}
 
