@@ -5,6 +5,7 @@
     <div id="page">
   
       <header><div class="container section header clearfix">
+        <div class="header-rule-left header-rule"></div>
   
         <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="logo">
@@ -33,6 +34,7 @@
           </div> <!-- /#name-and-slogan -->
         <?php endif; ?>
           <?php print render($page['header']); ?>
+          <div class="header-rule-right header-rule"></div>
 
       </div><!-- /.section .header -->
     </header> <!-- /#header -->
@@ -69,31 +71,13 @@
       <div id="main-wrapper">
       <?php print $messages; ?>
     
-				<?php if ($page['home_rotator_one'] || $page['home_rotator_two'] || 
-								  $page['home_rotator_three'] || $page['home_rotator_four']): ?>
-          <div id="rotators" class="container clearfix">
-						 <?php if ($page['home_rotator_one']): ?>
-								<div id="rotator1" class="rotator">
-                  <?php print render($page['home_rotator_one']); ?>
+						 <?php if ($page['home_hero']): ?>
+              <div class="container clearfix">
+								<div class="home-hero">
+                  <?php print render($page['home_hero']); ?>
                 </div>
-              <?php endif; ?>
-						 <?php if ($page['home_rotator_two']): ?>
-								<div id="rotator2" class="rotator">
-                  <?php print render($page['home_rotator_two']); ?>
-                </div>
-              <?php endif; ?>
-						 <?php if ($page['home_rotator_three']): ?>
-								<div id="rotator3" class="rotator">
-                  <?php print render($page['home_rotator_three']); ?>
-                </div>
-              <?php endif; ?>
-						 <?php if ($page['home_rotator_four']): ?>
-								<div id="rotator4" class="rotator">
-                  <?php print render($page['home_rotator_four']); ?>
-                </div>
-              <?php endif; ?>
-          </div>
-        <?php endif; ?>
+              </div>
+            <?php endif; ?>
         <?php if ($page['preface_one'] || $page['preface_two'] || $page['preface_three']): ?>
           <div id="preface" class="clearfix">
             <div class="container preface clearfix">
