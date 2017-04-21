@@ -5,7 +5,6 @@
     <div id="page">
   
       <header><div class="container section header clearfix">
-        <div class="header-rule-left header-rule"></div>
   
         <?php if ($logo): ?>
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo" class="logo">
@@ -34,7 +33,6 @@
           </div> <!-- /#name-and-slogan -->
         <?php endif; ?>
           <?php print render($page['header']); ?>
-          <div class="header-rule-right header-rule"></div>
 
       </div><!-- /.section .header -->
     </header> <!-- /#header -->

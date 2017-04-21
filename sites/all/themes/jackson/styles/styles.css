@@ -135,7 +135,6 @@ h4 a,
 h5 a,
 h6 a,
 h1 a:visited,
-h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited,
@@ -186,6 +185,10 @@ ul.links.inline {
 
 .sidebar li a{font-size:1.2em;}
 
+h2 a:hover, .sidebar li a:hover,
+.sidebar li.active-trail a.active{color:#E78364;}
+.sidebar li.active-trail a.active{font-weight: bold; color:#E78364;}
+
 .form-submit,
 .form-button {
   background-color: #102624;
@@ -217,13 +220,14 @@ a:hover {
 header {
 	display:block;
 	border-bottom:#000 1px solid;
-  /*height: 145px;*/
   width: 100%;
   background: #FFEBAA;
 }
 .header {
 	/*background:url('../images/logo_line.gif') 0 70px no-repeat;*/
   height: 100px;
+  overflow: hidden;
+  background: url("../images/header_bkgrd.png") 0 67px no-repeat;
 }
 
 .header-rule {
@@ -238,7 +242,7 @@ header {
 }
 
 .header-rule-right {
-  width: 918px;
+  width: 418px;
   margin-left: 282px;
 }
 
@@ -253,12 +257,15 @@ header {
   padding-top: 15px;
 }
 .logo {
-	margin:15px 0 0 13px;
+	margin:15px 0 0 30px;
   float: left;
 }
 
-.inst-logos{float:right; margin-top:17px; clear:right; background: #FFEBAA; z-index: 50;}
-.inst-logos a{float:left; margin:0 5px; z-index: 50; }
+.inst-logos{float:right; margin-top:15px; clear:right;}
+.inst-logos a{float:left;}
+.dfci-logo {
+  margin-right: 88px;
+}
 
 .block-search {
   clear: right;
@@ -680,7 +687,8 @@ article li{margin-bottom:5px;}
 .research-questions{font-family:'droid_serifitalic'; font-size:110%; margin:15px 0 20px 40px; color:#599AC2;}
 .research-questions li{margin-bottom:10px;line-height:1.5em;}
 hr {
-  border-color: #022249;
+  border: none;
+  background: #022249;
   margin: 50px 0;
 }
 .topmenu{float:right; margin:10px 0 0 0;}
@@ -776,7 +784,7 @@ div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
 }
 
 .domain-box-wide {
-  width: 420px;
+  width: 460px;
 }
 
 .domain-box h2 {
@@ -813,6 +821,10 @@ div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
   margin-bottom: 5px;
 }
 
+.concepts-list a {
+  font-size: 1.18em;
+}
+
 .concepts-border {
   border-width: 15px;
   border-style: solid;
@@ -830,13 +842,17 @@ div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
   border-color: #89B4C1;
 }
 
+.domain-name-box {
+  margin-bottom: 20px;
+}
+
 .domain-name-box p {
   color: #fff;
   background: #305282;
-  width: 220px;
-  padding: 35px 0 40px 0;
+  width: 180px;
+  padding: 27px 0 29px 0;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.3em;
 }
 
 .view-measures .view-header {
