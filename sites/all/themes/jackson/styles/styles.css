@@ -183,7 +183,7 @@ ul.links.inline {
 	margin-bottom:10px;
 }
 
-.sidebar li a{font-size:1.2em;}
+.sidebar li a{font-size:1.15em;}
 
 h2 a:hover, .sidebar li a:hover,
 .sidebar li.active-trail a.active{color:#E78364;}
@@ -822,7 +822,7 @@ div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
 }
 
 .concepts-list a {
-  font-size: 1.18em;
+  font-size: 1.1em;
 }
 
 .concepts-border {
@@ -893,7 +893,8 @@ h2.measure-header {
 
 .measure-table table {
   border-spacing: 1px;
-  margin: 25px 0 55px 0;
+  margin: 10px 0 55px 0;
+  width: 100%;
 }
 
 .measure-table th {
