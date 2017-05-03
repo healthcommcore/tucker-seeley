@@ -93,3 +93,15 @@
 .bottom .gutter {
   padding: 0 10px 5px;
 }
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .one-sidebar .first-sidebar {
+    width: 230px;
+  }
+  .sidebar-first .page-content {
+    width: 600px;
+  }
+}

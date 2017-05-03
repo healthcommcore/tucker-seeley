@@ -691,6 +691,9 @@ hr {
   background: #022249;
   margin: 50px 0;
 }
+small {
+  font-size: 70%;
+}
 .topmenu{float:right; margin:10px 0 0 0;}
 .topmenu h2{display:none;}
 .topmenu ul li{list-style:none; list-style-image:none; float:left; border-right:#CF710C 1px solid; padding:0 15px; line-height:1.1em; margin:0;}
@@ -924,4 +927,32 @@ h2.measure-header {
   width: 345px;
   text-align: left;
   font-size: 1.0em;
+}
+
+.desktop-only {
+  display: block;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .header {
+    background: url("../images/header_bkgrd_mobile.png") 0 67px no-repeat;
+  }
+  .dfci-logo {
+    margin-right: 43px;
+  }
+  .home-hero {
+    height: 388px;
+  }
+  blockquote {
+    padding: 39px 30px;
+  }
 }
