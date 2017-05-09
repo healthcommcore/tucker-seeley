@@ -936,6 +936,12 @@ h2.measure-header {
   display: none;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 1199px) {
   .desktop-only {
     display: none;
@@ -955,4 +961,33 @@ h2.measure-header {
   blockquote {
     padding: 39px 30px;
   }
+
+  .domain-box-wide {
+    width: 360px;
+  }
+
+  .domain-box-narrow {
+    width: 270px;
+  }
+
+  .domain-box h2 {
+    font-size: 1.8em;
+  }
+
+  .domain-name-box p {
+    width: 150px;
+    font-size: 1.2em;
+    padding: 24px 0 27px 0;
+  }
+
+  .concepts-list {
+    font-size: 1.1em;
+    line-height: 1.2em;
+    padding: 18px 25px;
+  }
+
+  .concepts-border {
+    border-width: 13px;
+  }
+
 }
